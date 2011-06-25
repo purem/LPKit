@@ -201,7 +201,7 @@ var CPTextFieldInputOwner = nil;
 - (BOOL)performKeyEquivalent:(CPEvent)anEvent
 {
     [[[self window] platformWindow] _propagateCurrentDOMEvent:YES];
-    return YES;
+    return NO;
 }
 
 - (BOOL)becomeFirstResponder
